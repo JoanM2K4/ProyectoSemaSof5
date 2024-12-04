@@ -2,3 +2,35 @@
     position: absolute;
 }
 
+.slider{
+    background-image: url("/img/galeria/1.jpg");
+    background-size: cover;
+    animation: animate 10s infinite;
+}
+
+@keyframes animate {
+    20% {
+        background-image: url("/img/galeria/1.jpg");
+        background-size: cover;
+    }
+
+    40% {
+        background-image: url("/img/galeria/2.jpg");
+        background-size: cover;
+    }
+
+    60% {
+        background-image: url("/img/galeria/3.jpg");
+        background-size: cover;
+    }
+
+    80% {
+        background-image: url("/img/galeria/4.jpg");
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url("/img/galeria/5.jpg");
+        background-size: cover;
+    }
+}
