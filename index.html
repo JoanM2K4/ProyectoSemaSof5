@@ -5,35 +5,80 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Menú Desplegable</title>
-	<link rel="stylesheet" href="estilo.css">
+	<link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 	<header>
 		<nav class="Menu">
 			<ul class="Menu-Horizontal">
-				<li><a href="#Inicio">Inicio</a></li>
-				<li><a href="#Sitios">Sitios Turisticos</a>
+				<li><a href="index.html">Inicio</a></li> <!-- Enlace a la página inicio -->
+				<li><a>Sitios Turísticos</a> <!-- Enlace a la página sitios -->
 					<ul class="Menu-Vertical">
-						<li><a href="#Sitio">Sitio 1</a></li>
-						<li><a href="#Sitio">Sitio 2</a></li>
-						<li><a href="#Sitio">Sitio 3</a></li>
-						<li><a href="#Sitio">Sitio 4</a></li>
-						<li><a href="#Sitio">Sitio 5</a></li>
+						<li><a href="Pagina1.html">Página 1</a></li>
+						<li><a href="Pagina2.html">Página 2</a></li>
+						<li><a href="Pagina3.html">Página 3</a></li>
+						<li><a href="Pagina4.html">Página 4</a></li>
+						<li><a href="Pagina5.html">Página 5</a></li>
 					</ul>
 				</li>
-				<li><a href="#Galeria">Galeria</a></li>
-				<li><a href="#Juego">Mini-Juego</a></li>
-				<li><a href="#Contacto">Contacto</a></li>
+				<li><a href="galeria.html">Galería</a></li> <!-- Enlace a la página galería -->
+				<li><a href="juego.html">Mini-Juego</a></li> <!-- Enlace al juego -->
+				<li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página contacto -->
 			</ul>
 		</nav>
 	</header>
 	<main>
+		<!-- Frase que va en medio de la pagina -->
 		<section class="Frase">
-				<h1 class="texto-sobre-imagen">
-					Descubre la magia en cada rincón.
-				</h1>
+			<h1 class="texto-sobre-imagen">
+				Descubre la magia en cada rincón.
+			</h1>
 		</section>
+		<section id="Informacion" class="contenido">
+			<div class="section-dividida">
+				<div class="lado-imagen">
+					<div class="fondo-verde"></div>
+					<img src="img/informacion.jpg" alt="Imagen de ejemplo" class="imagen-superpuesta">
+				</div>
+				<div class="lado-texto">
+					<h2>¿Porqué Turismo en Coclé?</h2>
+					<p>
+						En el corazón de Panamá, la provincia de Coclé emerge como un destino lleno de contrastes y
+						belleza natural. Con sus kilómetros de playas doradas bañadas por el Pacífico, su rica historia
+						cultural y sus impresionantes paisajes montañosos, Coclé ofrece una experiencia diversa para los
+						viajeros.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Objetivo -->
+		<section id="Objetivo" class="contenido">
+			<h2>Objetivo de esta Página</h2>
+			<p>
+				El objetivo principal de esta página es proporcionar una plataforma interactiva, visualmente atractiva y accesible que destaque los principales atractivos turísticos de la provincia de Coclé. A través de un diseño moderno y contenido cuidadosamente curado, buscamos:
+			</p>
+			<ul class="objetivos-lista">
+				<li><strong>Inspirar a los Visitantes:</strong>
+					<p>Mostrar la riqueza cultural, histórica y natural de Coclé, incentivando a los usuarios a explorar esta región única. Destacar la diversidad de experiencias, desde playas paradisíacas hasta montañas y sitios arqueológicos.</p>
+				</li>
+				<li><strong>Fomentar el Turismo Sostenible:</strong>
+					<p>Promover prácticas que respeten el medio ambiente, la cultura local y el patrimonio histórico. Apoyar a las comunidades locales a través de la visibilización de sus productos, servicios y festividades.</p>
+				</li>
+				<li><strong>Ofrecer Información Práctica y Completa:</strong>
+					<p>Brindar datos clave para la planificación de visitas, incluyendo información sobre destinos, actividades y recursos. Proporcionar una experiencia intuitiva para que los usuarios encuentren fácilmente lo que necesitan.</p>
+				</li>
+				<li><strong>Aumentar la Conexión con el Público:</strong>
+					<p>Crear un espacio donde los usuarios puedan interactuar, compartir sus experiencias y obtener respuestas a sus dudas. Incluir secciones dinámicas como una galería de imágenes y un mini-juego para hacer la navegación más entretenida.</p>
+				</li>
+			</ul>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<p>© 2024 Turismo Coclé. Todos los derechos reservados.</p>
+	</footer>
 	</main>
 </body>
 
