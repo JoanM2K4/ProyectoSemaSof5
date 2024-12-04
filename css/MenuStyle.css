@@ -37,13 +37,14 @@
 }
 
 .Menu-Vertical li {
-	margin: 10px 0px;
+	margin: 5px 0px;
 }
 
 .Menu-Vertical li a {
 	color: white;
 	text-decoration: none;
 	padding: 0px 0px 0px 5%;
+	text-align: left;
 }
 
 /*cuando pase por una opcion del menu horizontal sera verde*/

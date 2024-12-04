@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego: Atrapa el Círculo</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <link rel="stylesheet" href="css/MenuStyle.css">
+    <script src="/js/juego.js" defer></script>
+</head>
+
+<body>
+    <nav class="Menu">
+        <ul class="Menu-Horizontal">
+            <li><a href="index.html">Inicio</a></li> <!-- Enlace a la página inicio -->
+            <li><a>Sitios Turísticos</a> <!-- Enlace a la página sitios -->
+                <ul class="Menu-Vertical">
+                    <li><a href="Pagina1.html">Página 1</a></li>
+                    <li><a href="Pagina2.html">Página 2</a></li>
+                    <li><a href="Pagina3.html">Página 3</a></li>
+                    <li><a href="Pagina4.html">Página 4</a></li>
+                    <li><a href="Pagina5.html">Página 5</a></li>
+                </ul>
+            </li>
+            <li><a href="galeria.html">Galería</a></li> <!-- Enlace a la página galería -->
+            <li><a href="juego.html">Mini-Juego</a></li> <!-- Enlace al juego -->
+            <li><a href="contacto.html">Contacto</a></li> <!-- Enlace a la página contacto -->
+        </ul>
+    </nav> 
+    <header class="header">
+        <h1>🎮 Atrapa el Círculo</h1>
+        <p>Haz clic en el círculo para ganar puntos. ¡Rápido, antes de que desaparezca!</p>
+    </header>
+    <main class="game-container">
+        <div id="circle"></div>
+        <div class="scoreboard">
+            <p>Puntaje Actual: <span id="currentScore">0</span></p>
+            <p>Mejor Puntaje: <span id="highScore">0</span></p>
+        </div>
+        <button id="startGame">Iniciar Juego</button>
+    </main>
+    <footer class="footer">
+        <p>Diviértete jugando y mejora tu puntaje.</p>
+    </footer>
+</body>
+</html>
