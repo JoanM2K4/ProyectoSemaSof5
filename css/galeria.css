@@ -6,6 +6,10 @@
     color: white;
     text-decoration: none;
 }
+.texto-sobre-imagen p{
+    font-size: 40%;
+    color: bisque;
+}
 .slider{
     background-image: url("/img/galeria/1.jpg");
     background-size: cover;
@@ -36,5 +40,11 @@
     100% {
         background-image: url("/img/galeria/5.jpg");
         background-size: cover;
+    }
+}
+
+@media (max-width: 768px) {
+    footer{
+        display: none;
     }
 }
