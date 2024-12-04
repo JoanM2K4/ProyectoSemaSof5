@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/*------- 															MENU - Inicio --------*/
+/*Arreglar el tamano de fuente a uno responsive*/
+.Menu {
+	max-width: 900px;
+	margin: auto;
+	background-color: white;
+	font-size: 20px;
+	margin-top: 50px;
+	border-radius: 5px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+	/* Sombra */
+}
+
+.Menu-Horizontal {
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+.Menu-Horizontal li a {
+	display: block;
+	padding: 15px 20px;
+	color: black;
+	text-decoration: none;
+}
+
+.Menu-Vertical {
+	position: absolute;
+	/*sin esto, ocupa mucho espacio*/
+	width: 20%;
+	display: none;
+	list-style: none;
+	border-radius: 5px;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+.Menu-Vertical li {
+	margin: 10px 0px;
+}
+
+.Menu-Vertical li a {
+	color: white;
+	text-decoration: none;
+	padding: 0px 0px 0px 5%;
+}
+
+/*cuando pase por una opcion del menu horizontal sera verde*/
+.Menu-Horizontal li:hover {
+	background-color: green;
+}
+
+/*y con lo anterior la fuente sera blanca*/
+.Menu-Horizontal li:hover a {
+	color: white;
+}
+
+/*se abrira el menu vertical*/
+.Menu-Horizontal li:hover .Menu-Vertical {
+	display: block;
+}
+
+/*cuando pase por una opcion del menu vertical sera mas oscuro*/
+.Menu-Vertical li:hover {
+	background-color: rgba(0, 0, 0, .7);
+}
+
+/*------- 																MENU - Fin --------*/
+
+/* Media Queries */
+
+/* Para pantallas más grandes (mayores a 769px) */
+@media (min-width: 769px) {
+	.Menu-Horizontal {
+		flex-direction: row;
+	}
+
+	.Menu-Horizontal li {
+		width: auto; /* Asegura que los elementos no ocupen todo el ancho */
+	}
+
+	.Menu-Horizontal li .Menu-Vertical {
+		position: absolute;
+		width: 20%; /* El menú vertical no debería ocupar todo el ancho */
+	}
+}
+
+/* Para pantallas más pequeñas (menores a 768px) */
+@media (max-width: 768px) {
+	.Menu {
+		font-size: 16px;
+	}
+
+	.Menu-Horizontal {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.Menu-Horizontal li {
+		width: 100%; /* Los elementos del menú ocupan todo el ancho */
+	}
+
+	.Menu-Horizontal li .Menu-Vertical {
+		position: relative;
+		width: 100%; /* Ajusta el menú vertical para que ocupe todo el ancho */
+	}
+}
