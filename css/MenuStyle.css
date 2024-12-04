@@ -34,6 +34,8 @@
 	list-style: none;
 	border-radius: 5px;
 	background-color: rgba(0, 0, 0, .5);
+	min-width: 200px; /* Asegura un ancho mínimo */
+    z-index: 10; /* Para evitar problemas de solapamiento */
 }
 
 .Menu-Vertical li {

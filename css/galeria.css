@@ -2,6 +2,10 @@
     position: absolute;
 }
 
+.texto-sobre-imagen a{
+    color: white;
+    text-decoration: none;
+}
 .slider{
     background-image: url("/img/galeria/1.jpg");
     background-size: cover;

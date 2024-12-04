@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playa Santa Clara</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f6f2;
+            color: #444;
+        }
+        .hero {
+            background-image: url('Imagenes/santaclara.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            border-bottom: 8px solid #ffa726;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+        .hero h1 {
+            font-size: 3.5em;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.8em;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+        }
+        nav {
+            background-color: #ff7043;
+            padding: 15px 20px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #e64a19;
+        }
+        .Menu-Horizontal {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+        .Menu-Horizontal li {
+            position: relative;
+        }
+        .Menu-Horizontal a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .Menu-Horizontal a:hover {
+            background-color: #e64a19;
+        }
+        .Menu-Vertical {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #ff7043;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .Menu-Vertical li a {
+            padding: 12px 20px;
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+        }
+        .Menu-Vertical li a:hover {
+            background-color: #e64a19;
+        }
+        .Menu-Horizontal li:hover .Menu-Vertical {
+            display: block;
+        }
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #ffffff, #fbe9e7);
+            border-radius: 10px;
+            margin: 30px 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+        }
+        .section h2 {
+            color: #ff7043;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            background-color: #ff7043;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #e64a19;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #ff7043;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 30px;
+        }
+        footer a {
+            color: #ffe0b2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5em;
+            }
+            .hero p {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección Hero -->
+    <div class="hero">
+        <div>
+            <h1>Playa Santa Clara</h1>
+            <p>Tu paraíso tropical en la costa del Pacífico panameño.</p>
+        </div>
+    </div>
+
+    <!-- Navegación Nuevo Menú -->
+    <nav class="Menu">
+        <ul class="Menu-Horizontal">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a>Sitios Turísticos</a>
+                <ul class="Menu-Vertical">
+                    <li><a href="Pagina1.html">Página 1</a></li>
+                    <li><a href="Pagina2.html">Página 2</a></li>
+                    <li><a href="Pagina3.html">Página 3</a></li>
+                    <li><a href="Pagina4.html">Página 4</a></li>
+                    <li><a href="Pagina5.html">Página 5</a></li>
+                </ul>
+            </li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="juego.html">Mini-Juego</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección Bienvenida -->
+    <div class="section">
+        <h2>Bienvenido a Playa Santa Clara</h2>
+        <p>Disfruta de arenas blancas, aguas cristalinas y un ambiente relajante perfecto para escapar del estrés cotidiano. Playa Santa Clara es el lugar ideal para familias, amigos y aventureros que buscan tranquilidad y diversión.</p>
+        <a class="button" href="reservas.html">Reserva tu experiencia</a>
+    </div>
+
+    <!-- Galería -->
+    <div class="section">
+        <h2>Explora Nuestra Playa</h2>
+        <div class="gallery">
+            <img src="Imagenes/santaclara1.jpg" alt="Vista aérea de Playa Santa Clara">
+            <img src="Imagenes/santaclara2.jpg" alt="Puesta de sol en la playa">
+            <img src="Imagenes/santaclara3.jpg" alt="Arena blanca y palmeras">
+            <img src="Imagenes/santaclara4.jpg" alt="Personas disfrutando del mar">
+        </div>
+    </div>
+
+    <!-- Sección Contacto -->
+    <div class="section">
+        <h2>Contacta con Nosotros</h2>
+        <p>¿Listo para planear tu visita? Escríbenos a <strong>playasantaclara@gmail.com</strong> o síguenos en nuestras redes sociales para más información.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Playa Santa Clara. Todos los derechos reservados. Diseñado con 🌴 y 🌊 en Panamá. | <a href="politicas.html">Política de privacidad</a></p>
+    </footer>
+
+</body>
+</html>
